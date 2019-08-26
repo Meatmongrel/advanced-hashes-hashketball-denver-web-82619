@@ -120,7 +120,7 @@ def num_points_scored(players)
       if att == :players
         data.each do |player|
           if player[:player_name] == players
-            return player[:points]
+            player[:points]
           end
         end
       end
@@ -131,7 +131,6 @@ end
 
 def shoe_size(players)
     game_hash.each do |place, team|
-      binding.pry
     team.each do |att, data|
       if att == :players
         data.each do |player|
